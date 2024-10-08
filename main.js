@@ -38,16 +38,16 @@ togglePageModeButton.addEventListener("click", () => {
 //Event listener for icon change on mouseover/out
 togglePageModeButton.addEventListener("mouseover", () => {
     if (booleanMode === 0) {
-        togglePageModeButton.style.backgroundImage = `url("lightModeIcon.png")`;
-    } else {
         togglePageModeButton.style.backgroundImage = `url("darkModeIcon.png")`;
+    } else {
+        togglePageModeButton.style.backgroundImage = `url("lightModeIcon.png")`;
     }
 })
 togglePageModeButton.addEventListener("mouseout", () => {
     if (booleanMode === 0) {
-        togglePageModeButton.style.backgroundImage = `url("darkModeIcon.png")`;
-    } else {
         togglePageModeButton.style.backgroundImage = `url("lightModeIcon.png")`;
+    } else {
+        togglePageModeButton.style.backgroundImage = `url("darkModeIcon.png")`;
     }
 })
 /*Light/dark mode switch end:*/

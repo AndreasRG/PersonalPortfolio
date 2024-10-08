@@ -66,7 +66,7 @@ nav ul li button {
     border-radius: 25px;
     position: relative;
     bottom: 2px;
-    background-image: url("darkModeIcon.png");
+    background-image: url("lightModeIcon.png");
     background-size: 47px 47px;
     transition: 0.2s;
 }
