@@ -38,15 +38,18 @@ header {
     border-bottom: solid;
     border-width: 1px;
     height: 75px;
-}
-
-header div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-header div img {
+header div a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header div a img {
     height: 65px;
     width: 65px;
 }
@@ -58,7 +61,7 @@ nav ul {
     flex-direction: row;
 }
 
-nav ul li button {
+.lightDarkModeBtn {
     height: 50px;
     width: 50px;
     border-color: transparent;
@@ -87,6 +90,21 @@ nav ul li {
 nav ul li:hover {
     color: dimgrey;
 }
+
+nav ul li a:link, nav ul li a:visited, nav ul li a:active {
+    text-decoration: none;
+}
+
+.navBtn {
+    border-color: transparent;
+    background-color: transparent;
+    transition: 0.2s;
+    border-radius: 10px;
+    color: black;
+    font: normal 27px/1.5 "calibri";
+    transition: 0.2s;
+}
+
 
 /*Section introduction*/
 #introduction {
