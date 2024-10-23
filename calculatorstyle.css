@@ -1,0 +1,58 @@
+/*Global CSS:*/
+body {
+    background-color: grey;
+    color: white;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font: bold 40px/1.5 "calibri";
+}
+
+h2 {
+    width: 150px;
+    font: normal 32px/1.5 "calibri";
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin: 0 30% 0 30%;
+    font: normal 20px/1.5 "calibri";
+}
+
+/*Header*/
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header div a img {
+    height: 65px;
+    width: 65px;
+}
+
+/*Content*/
+#selectCountry div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0;
+}
+
+#selectCountry div div img {
+    height: 200px;
+    width: 300px;
+    padding: 0;
+}
+
+#selectCountry div div img:hover {
+    opacity: 80%;
+    transition: 0.2s;
+}
+
+input {
+
+}
