@@ -133,12 +133,65 @@ nav ul li a:link, nav ul li a:visited, nav ul li a:active {
 footer {
     border-top-style: solid;
     border-width: 1px;
+    display: flex;
+    margin: 0 30% 0 30%;
 }
 
 footer ul li {
-    margin: 0 30% 0 30%;
+
 }
 
 footer ul li:nth-child(1) {
     font: normal 27px/1.5 "calibri";
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    font: normal 27px/1.5 "calibri";
+    margin-top: 15px;
+    border-bottom-color: transparent;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+label {
+    font: lighter 27px/1.5 "calibri";
+}
+
+input {
+    font: lighter 15px/1.5 "calibri";
+}
+
+#emailField input {
+    width: 200px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+#messageField textarea {
+    width: 350px;
+    height: 63px;
+    border-radius: 10px;
+    border-width: 1px;
+    max-width: 350px;
+}
+
+#submit input {
+    width: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-width: 1px;
+}
+
+#submit input:hover {
+    background-color: grey;1
+    transition: 0.2s;
 }
