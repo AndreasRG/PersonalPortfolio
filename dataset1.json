@@ -1,0 +1,37 @@
+[
+{
+  "name": "Frank Sinatra",
+  "age": "53",
+  "gender": "male"
+},
+{
+  "name": "Laura Andersson",
+  "age": "20",
+  "gender": "female"
+},
+{
+  "name": "Bill Jensen",
+  "age": "62",
+  "gender": "male"
+},
+{
+  "name": "Andreas Révész",
+  "age": "21",
+  "gender": "male"
+},
+{
+  "name": "Donald Trump",
+  "age": "52",
+  "gender": "male"
+},
+{
+  "name": "Michelle Obama",
+  "age": "48",
+  "gender": "female"
+},
+{
+  "name": "Angelina Jolie",
+  "age": "54",
+  "gender": "female"
+}
+]

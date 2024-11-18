@@ -1,0 +1,23 @@
+section {
+    margin: 50px 100px 0 100px;
+    background-color: lightgrey;
+}
+
+h1 {
+    font: bold 40px/1.5 "calibri";
+}
+
+input {
+    border-radius: 50px;
+    font: normal 20px/1.5 "calibri";
+}
+
+.response {
+    font: normal 20px/1.5 "calibri";
+}
+
+header div a img {
+    height: 65px;
+    width: 65px;
+}
+
