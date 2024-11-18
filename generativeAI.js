@@ -4,7 +4,7 @@ const inputBox = document.querySelector("input");
 const enterButton = document.querySelector(".enterButton")
 let resultOfAi = "";
 
-const API_KEY = "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"; // Replace with your actual API key
+const API_KEY = ""; // Replace with your actual API key
 
 function logSuggestion() {
     fetch("https://api-inference.huggingface.co/models/tiiuae/falcon-7b-instruct/v1/chat/completions", {
