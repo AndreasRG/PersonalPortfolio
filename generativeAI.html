@@ -2,17 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Generative AI</title>
+    <title>YouTube Title Generator - Generative AI</title>
     <link rel="stylesheet" href="generativeAiStyle.css">
 </head>
 <body>
 <header>
     <div><a href="index.html"><img src="ATCÍLogo.png" alt="A. Logo"></a></div>
+    <button class="apiKeyResetButton">Reset API_KEY</button>
 </header>
-<section>
-<h1>Ask me anything!</h1>
-<input>
-<button class="enterButton">Enter</button>
+<section id="inputQuery">
+    <h1>Give me a subject to make a YouTube title about:</h1>
+    <div id="content"></div>
+    <input name="query" class="query" placeholder="Gaming, DYI, etc.">
+    <button class="enterButton">Enter</button>
+</section>
+<section id="checkbox">
+    <div>
+        <h2>Amount of titles to generate:</h2>
+        <form>
+            <label>
+                <input type="radio" name="amount" value="1" checked>
+                1
+            </label>
+            <label>
+                <input type="radio" name="amount" value="3">
+                3
+            </label>
+            <label>
+                <input type="radio" name="amount" value="5">
+                5
+            </label>
+            <label>
+                <input type="radio" name="amount" value="10">
+                10
+            </label>
+        </form>
+    </div>
+    <div>
+        <h2>Language:</h2>
+        <form>
+            <label>
+                <input type="radio" name="language" value="English" checked>
+                English
+            </label>
+            <label>
+                <input type="radio" name="language" value="Spanish">
+                Spanish
+            </label>
+            <label>
+                <input type="radio" name="language" value="German">
+                German
+            </label>
+        </form>
+    </div>
+    <div>
+        <h2>Targeted age group:</h2>
+        <input type="number" name="age" min="0" max="99" placeholder="15">
+    </div>
+</section>
+<section id="instructions">
+    <h2 id="instructionsTitle">How to use the AI:</h2>
+    <ul>
+        <li>Use single keywords only</li>
+        <li>English language only in input</li>
+        <li>Use subjects prior to 2020. New celebrities etc. won't work</li>
+        <li>To reset API_key, press button in top right</li>
+        <li>Have fun:)</li>
+    </ul>
 </section>
 <script src="generativeAI.js"></script>
 </body>

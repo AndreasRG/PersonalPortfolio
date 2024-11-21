@@ -109,3 +109,37 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 /*Light/dark mode switch end:*/
+
+
+
+
+/*Data test start:
+
+//Fetching data:
+document.addEventListener('DOMContentLoaded', async () => {
+    const objectId = '673a8153aa0ea8786902188f'; // Replace with the actual ObjectId you want to query
+    const response = await fetch(`http://localhost:3000/maindb/data/${objectId}`);
+
+    if (response.ok) {
+        const data = await response.json();
+
+        // Select the HTML elements
+        const nameSelector = document.querySelector(".name");
+        const ageSelector = document.querySelector(".age");
+        const genderSelector = document.querySelector(".gender");
+
+        // Ensure elements are found before setting their textContent
+        if (nameSelector && ageSelector && genderSelector) {
+            nameSelector.textContent = data.name || 'Name not found'; // Assuming your data object has a 'name' property
+            ageSelector.textContent = data.age || 'Age not found';   // Assuming your data object has an 'age' property
+            genderSelector.textContent = data.gender || 'Gender not found'; // Assuming your data object has a 'gender' property
+        } else {
+            console.error('One or more elements were not found in the DOM.');
+        }
+    } else {
+        console.error('Failed to fetch data:', response.status);
+    }
+});
+
+/*Data test end*/
+
