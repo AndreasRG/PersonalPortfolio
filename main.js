@@ -111,9 +111,18 @@ document.addEventListener("DOMContentLoaded", () => {
 /*Light/dark mode switch end:*/
 
 
+fetch('https://yesno.wtf/api/')
+    .then(response => response.json())
+    .then(yesOrNoData => {
+        console.log(yesOrNoData);
+        // HERE IS WHERE YOU WRITE YOUR CODE!!!!!!!!
+    });
 
-
-
+fetch('URL')
+    .then(response => response.json())
+    .then(dataName => {
+        console.log(dataName);
+    });
 
 
 /*Data test start:
@@ -145,4 +154,3 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 /*Data test end*/
-
